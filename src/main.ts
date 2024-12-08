@@ -29,7 +29,7 @@ async function bootstrap() {
   // SECURITY
   setupSecurity(app)
 
-  await app.listen(5000)
+  await app.listen(8080)
 
   console.log(`Application is running on port: 5000`)
 }
