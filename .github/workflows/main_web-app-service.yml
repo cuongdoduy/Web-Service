@@ -26,8 +26,11 @@ jobs:
           npm install
           npm run build --if-present
 
-      - name: Zip artifact for deployment
-        run: git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | xargs zip release.zip
+      - name: Zip changed files for deployment
+        run: |
+          git diff --name-only ${{ github.sha }} ${{ github.sha }}~1 > changed_files.txt
+          git diff --name-only --diff-filter=d ${{ github.sha }} ${{ github.sha }}~1 > changed_files.txt
+          zip -@ release.zip < changed_files.txt
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
