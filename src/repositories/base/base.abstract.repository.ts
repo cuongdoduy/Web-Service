@@ -6,7 +6,7 @@ import {
   Repository,
 } from 'typeorm'
 import { BaseInterfaceRepository } from './base.interface.repository'
-import { FindAllResponse } from 'src/types/common.type'
+import { FindAllResponse } from '../../types/common.type'
 
 interface HasId {
   id: number

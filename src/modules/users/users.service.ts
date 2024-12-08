@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@nestjs/common'
-import { Users } from 'src/models/users.entity'
-import { BaseServiceAbstract } from 'src/services/base/base.abstract.service'
+import { Users } from '../../models/users.entity'
+import { BaseServiceAbstract } from '../../services/base/base.abstract.service'
 import { UsersRepositoryInterface } from './interfaces/users.interface'
 import { CreateUserDTO } from './dto/create-user.dto'
 import { DeepPartial } from 'typeorm'

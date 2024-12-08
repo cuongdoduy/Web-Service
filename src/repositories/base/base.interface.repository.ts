@@ -1,4 +1,4 @@
-import { FindAllResponse } from 'src/types/common.type'
+import { FindAllResponse } from '../../types/common.type'
 import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm'
 
 export interface BaseInterfaceRepository<T> {

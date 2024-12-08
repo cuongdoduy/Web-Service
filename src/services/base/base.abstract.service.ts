@@ -1,5 +1,5 @@
-import { BaseInterfaceRepository } from 'src/repositories/base/base.interface.repository'
-import { FindAllResponse } from 'src/types/common.type'
+import { BaseInterfaceRepository } from '../../repositories/base/base.interface.repository'
+import { FindAllResponse } from '../../types/common.type'
 import { BaseServiceInterface } from './base.interface.service'
 import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm'
 
